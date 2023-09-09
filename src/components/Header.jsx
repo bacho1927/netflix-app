@@ -52,7 +52,7 @@ function Header() {
                             </select>
                             <AiFillCaretDown className="text-white absolute right-2" />
                         </div>
-                        <button className='bg-[#E50914] text-white font-bold p-2 px-4 rounded-md  md:text-md '>Sign In</button>
+                        <button className='bg-[#E50914] hover:bg-[#a7131a] transition duration-500 text-white font-bold p-2 px-4 rounded-md  md:text-md '>Sign In</button>
                     </span>
 
                 </nav>
@@ -62,7 +62,7 @@ function Header() {
                         <p className="text-2xl md:text-3xl sm:text-2xl my-10 ">Watch anywhere. Cancel anytime.</p>
                         <h3 className="text-2 md:text-xl sm:text-lg ">Ready to watch? Enter your email to create or restart your membership.</h3>
                         <form className="flex flex-col items-center  justify-center">
-                            <div className="gap-2 my-6 relative flex">
+                            <div className="gap-2  my-6 relative flex">
                                 <label
                                     for='mainInput'
                                     className={`absolute overflow-hidden mx-3  transition-all cursor-text duration-300 ${placeholderFocused ? 'text-sm top-1 text-gray-300' : 'top-4 text-base text-gray-500'
@@ -80,7 +80,7 @@ function Header() {
                                         onChange={handleChange}
                                     />
                                 </div>
-                                <button className="bg-[#E50914] text-white font-bold text-md sm:text-xl p-3 px-6 rounded-md">Get started {'>'}</button>
+                                <button className="bg-[#E50914] hover:bg-[#a7131a] transition duration-500  text-white font-bold text-md sm:text-xl p-3 px-6 rounded-md">Get started {'>'}</button>
                             </div>
                         </form>
                     </main>
