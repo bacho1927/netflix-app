@@ -56,13 +56,13 @@ function Header() {
                     </span>
 
                 </nav>
-                <section className="bg-gradient-to-t from-black via-opacity-40 to-transparent">
+                <section className="bg-gradient-to-t from-black  via-opacity-70 to-transparent">
                     <main className="text-white  py-32 px-2 text-center ">
                         <h1 className="text-3xl md:text-4xl  lg:text-5xl font-bold">Unlimited movies, TV shows, and more</h1>
                         <p className="text-2xl md:text-3xl sm:text-2xl my-10 ">Watch anywhere. Cancel anytime.</p>
                         <h3 className="text-2 md:text-xl sm:text-lg ">Ready to watch? Enter your email to create or restart your membership.</h3>
                         <form className="flex flex-col items-center  justify-center">
-                            <div className="gap-2  my-6 relative flex">
+                            <div className="gap-2 my-6 relative flex">
                                 <label
                                     for='mainInput'
                                     className={`absolute overflow-hidden mx-3  transition-all cursor-text duration-300 ${placeholderFocused ? 'text-sm top-1 text-gray-300' : 'top-4 text-base text-gray-500'
@@ -70,7 +70,7 @@ function Header() {
                                 >
                                     Email Address
                                 </label>
-                                <div className={`w-80 text-white bg-slate-950 bg-opacity-30 rounded-md border flex items-end border-gray-600 px-2 ${placeholderFocused ? 'border-white' : ''}`}>
+                                <div className={`w-80 text-white bg-slate-950 bg-opacity-30 rounded-md border flex items-end border-gray-600 px-2 sm:w-96 ${placeholderFocused ? 'border-white' : ''}`}>
                                     <input
                                         id='mainInput'
                                         type="text"
