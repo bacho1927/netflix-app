@@ -9,6 +9,7 @@ function Header() {
     const [placeholderFocused, setPlaceholderFocused] = useState(false)
     const [inputValue, setInputValue] = useState('');
 
+
     const handleFocus = () => {
         setPlaceholderFocused(true);
     };
