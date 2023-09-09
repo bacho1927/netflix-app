@@ -64,7 +64,7 @@ function Header() {
                             <div className="gap-2 my-6 relative flex">
                                 <label
                                     for='mainInput'
-                                    className={`absolute overflow-hidden mx-3 top-4 transition-all cursor-text duration-300 ${placeholderFocused ? 'text-sm top-1 text-gray-300' : 'text-base text-gray-500'
+                                    className={`absolute overflow-hidden mx-3 top-4 transition-all cursor-text duration-300 ${placeholderFocused ? 'text-sm top-1  text-gray-300' : 'text-base text-gray-500'
                                         }`}
                                 >
                                     Email Address
