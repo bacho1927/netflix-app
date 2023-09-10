@@ -4,7 +4,7 @@ function Section() {
 
     const sectionData = firstSection.map(section => {
         return (
-            <div key={section.id} className="py-20  bg-black border-b-2 border-gray min-w-[500px]">
+            <div key={section.id} className="py-20  bg-black border-b-[10px] border-gray-700 min-w-[500px]">
                 <div className="flex flex-col items-center px-2 lg:flex lg:flex-row lg:px-32 bg-red" >
                     <div className="flex flex-col justify-center px-10" >
                         <h1 className="text-5xl font-bold text-white text-center lg:text-left">{section.sectionHeader}</h1>
