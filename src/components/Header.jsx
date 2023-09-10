@@ -4,10 +4,14 @@ import logo from '../img/netflix-logo.png'
 import { BsGlobe2 } from 'react-icons/bs'
 import { AiFillCaretDown } from 'react-icons/ai'
 
+
 function Header() {
+
 
     const [placeholderFocused, setPlaceholderFocused] = useState(false)
     const [inputValue, setInputValue] = useState('');
+
+
 
 
     const handleFocus = () => {
@@ -24,6 +28,8 @@ function Header() {
         setInputValue(e.target.value);
     };
 
+
+
     const mainImgStyle = {
         backgroundImage: `url(${mainImg})`,
         backgroundSize: 'cover',
@@ -32,6 +38,8 @@ function Header() {
         minWidth: '500px',
 
     }
+
+
 
 
     return (
@@ -65,7 +73,7 @@ function Header() {
                             <div className="gap-2 my-6 relative flex">
                                 <label
                                     for='mainInput'
-                                    className={`absolute overflow-hidden mx-3  transition-all cursor-text duration-300 ${placeholderFocused ? 'text-sm top-1 text-gray-300' : 'top-4 text-base text-gray-500'
+                                    className={`absolute overflow-hidden mx-3  transition-all cursor-text  duration-300 ${placeholderFocused ? 'text-sm top-1 text-gray-300' : 'top-4 text-base text-gray-500 font-bold'
                                         }`}
                                 >
                                     Email Address
@@ -74,7 +82,7 @@ function Header() {
                                     <input
                                         id='mainInput'
                                         type="text"
-                                        className={`w-full bg-transparent   outline-none p-1 `}
+                                        className={`w-full bg-transparent   outline-none font-bold p-1 `}
                                         onFocus={handleFocus}
                                         onBlur={handleBlur}
                                         onChange={handleChange}

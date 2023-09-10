@@ -10,9 +10,10 @@ function Section() {
                         <h1 className="text-5xl font-bold text-white text-center lg:text-left">{section.sectionHeader}</h1>
                         <p className="text-white text-2xl  my-4 text-center lg:text-left">{section.sectionParagraph}</p>
                     </div>
-                    <div className="relative z-[1] w-[80%] ">
-                        <img src={section.sectionPhoto} className="mx-auto  lg:w-full " />
-                        <div className={` absolute  z-[-1] ${section.id === 3 ? 'top-[40px] w-[350px] left-[105px]' : 'top-[80px] right-[75px] w-[73%]'
+                    <div className=" z-[1] w-[60%] relative ">
+
+                        <img src={section.sectionPhoto} className=" lg:w-full mx-auto " />
+                        <div className={` absolute top-0 left-0  z-[-1] ${section.id === 3 ? 'top-[10%] left-[20%] w-[60%] ' : 'top-[20%] left-[13%] w-[73%]'
                             } `}>
                             <video autoPlay muted loop >
                                 <source src={section.sectionVideo} type='video/mp4' />
