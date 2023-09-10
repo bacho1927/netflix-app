@@ -13,7 +13,7 @@ function Section() {
                     <div className=" z-[1] w-[60%] relative ">
 
                         <img src={section.sectionPhoto} className=" lg:w-full mx-auto " />
-                        <div className={` absolute top-0 left-0  z-[-1] ${section.id === 3 ? 'top-[10%] left-[20%] w-[60%] ' : 'top-[20%] left-[13%] w-[73%]'
+                        <div className={` absolute top-0 left-0  z-[-1] ${section.id === 3 ? 'top-[10%] left-[20%] w-[60%] ' : 'top-[20%] left-[13%] w-[73%] '
                             } `}>
                             <video autoPlay muted loop >
                                 <source src={section.sectionVideo} type='video/mp4' />
