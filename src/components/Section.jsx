@@ -12,9 +12,9 @@ function Section() {
                     </div>
                     <div className=" z-[1] w-[70%] relative  ">
 
-                        <img src={section.sectionPhoto} className=" lg:w-full mx-auto " />
+                        <img alt='section img' src={section.sectionPhoto} className=" lg:w-full mx-auto " />
                         {section.id === 2 ? <div className="text-white absolute flex justify-around items-center bottom-[5%] left-[20%] bg-black w-[60%] h-[25%] border-2 border-[#2D2D2D] rounded-md">
-                            <img src={section.sectionBanner} className="h-[80%] " />
+                            <img alt='section img' src={section.sectionBanner} className="h-[80%] " />
                             <div>
                                 <p className="text-white text-sm lg:text-lg  font-bold">Stranger Things</p>
                                 <p className="text-blue-600 text-sm font-bold ">Downloading...</p>
