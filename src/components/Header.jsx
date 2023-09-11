@@ -19,7 +19,7 @@ function Header() {
     };
 
     const handleBlur = () => {
-        if (inputValue == '') {
+        if (inputValue === '') {
             setPlaceholderFocused(false);
         }
     };
@@ -48,7 +48,7 @@ function Header() {
             <div style={mainImgStyle} >
 
                 <nav className=" flex justify-between  items-center px-8  sm:px-[100px] md:px-42 xl:px-72  mx-auto bg-gradient-to-b from-black via-opacity-40 to-transparent " >
-                    <img src={logo} className='w-44 min-w' />
+                    <img alt='logo' src={logo} className='w-44 min-w' />
                     <span className="flex  gap-6">
                         <div className="relative flex items-center">
                             <BsGlobe2 className="text-white absolute m-3" />
