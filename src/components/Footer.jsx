@@ -3,7 +3,7 @@ import SelectLanguage from "./SelectLanguage";
 function Footer() {
     return (
 
-        <footer className="min-w-[500px]   bg-black py-14 ">
+        <footer className="min-w-[500px]   bg-black py-14 border-t-8 border-[#2D2D2D] ">
             <div className="flex flex-col w-[90%] xl:w-[60%] mx-auto ">
                 <a href="/" className="text-[#BEBEBE] text-lg underline ">Questions? Contact us.</a>
                 <div className="text-white ">
