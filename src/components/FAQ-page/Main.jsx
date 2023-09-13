@@ -5,7 +5,7 @@ import { MdOutlineArticle } from 'react-icons/md'
 function Main() {
     return (
         <div className=" min-w-[500px]" >
-            <div className="py-12 max-w-[70%]  mx-auto min-w-[500px] px-2  ">
+            <div className="py-12 max-w-[70%]  mx-auto min-w-[500px] px-4  ">
                 < div  >
                     <Link to='/' className="flex items-center text-[#e50914] font-semibold">
                         <AiOutlineArrowLeft />
@@ -24,29 +24,29 @@ function Main() {
                             <p className="mt-4">If you're already a member and would like to learn more about using Netflix, visit Getting started with Netflix.</p>
                         </div>
                     </div>
-                    <aside className="border-t-8 border-red-600 rounded mt-6 xl:ml-16" >
+                    <aside className="border-t-8 border-red-600 rounded mt-6 xl:ml-14" >
 
                         <div className="border border-[#B2B2B2] p-2 rounded ">
                             <h1 className="text-xl font-semibold">Related Articles</h1>
-                            <ul className="space-y-2 underline font-semibold py-4 flex flex-col gap-4">
+                            <ul className="space-y-2 underline font-semibold py-4 flex flex-col gap-2">
 
-                                <li className="flex items-center  ">
+                                <li className="flex items-center gap-2 ">
                                     <MdOutlineArticle className="text-xl" />
                                     <a href="/">Getting started with Netflix</a>
                                 </li>
-                                <li className="flex items-center ">
+                                <li className="flex items-center gap-2 ">
                                     <MdOutlineArticle className="text-xl" />
                                     <a href="/">Billing and Payments</a>
                                 </li>
-                                <li className="flex items-center ">
+                                <li className="flex items-center gap-2">
                                     <MdOutlineArticle className="text-xl" />
                                     <a href="/" >Netflix Gift Cards</a>
                                 </li>
-                                <li className="flex items-center ">
+                                <li className="flex items-center gap-2">
                                     <MdOutlineArticle className="text-xl" />
                                     <a href="/">Can't sign in to Netflix</a>
                                 </li>
-                                <li className="flex items-center ">
+                                <li className="flex items-center gap-2">
                                     <MdOutlineArticle className="text-xl" />
                                     <a href="/">How to create, change, delete profiles </a>
                                 </li>
