@@ -1,14 +1,23 @@
-import Header from "./components/Header";
-import Section from "./components/Section";
-import Faq from "./components/Faq";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/main-page/Home";
+import FaqHome from "./components/FAQ-page/FaqHome";
+
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Section />
-      <Faq />
-      <Footer />
+
+      <BrowserRouter >
+        <Routes>
+
+
+          <Route path="/" element={<Home />} />
+          <Route path="/FAQ" element={<FaqHome />} />
+
+
+
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

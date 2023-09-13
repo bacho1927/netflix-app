@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import mainImg from '../img/main-img.jpg'
-import logo from '../img/netflix-logo.png'
-
+import React from "react";
+import mainImg from '../../img/main-img.jpg'
+import logo from '../../img/netflix-logo.png'
 import Mail from "./Mail";
 import SelectLanguage from "./SelectLanguage";
 
@@ -25,10 +24,12 @@ function Header() {
             <div style={mainImgStyle} >
 
                 <nav className=" flex justify-between  items-center px-8  sm:px-[100px] md:px-42 xl:px-72  mx-auto bg-gradient-to-b from-black via-opacity-40 to-transparent " >
-                    <img alt='logo' src={logo} className='w-44 min-w' />
+                    <a href="/">
+                        <img src={logo} alt="netflix-logo" className='w-44 ' />
+                    </a>
                     <span className="flex  gap-6">
                         <SelectLanguage />
-                        <button className='bg-[#E50914] hover:bg-[#a7131a] transition duration-500 text-white font-bold p-2 px-4 rounded-md  md:text-md '>Sign In</button>
+                        <button className='bg-[#E50914] hover:bg-[#a7131a] transition duration-500 text-white font-semibold p-2 px-4 rounded-md  md:text-md '>Sign In</button>
                     </span>
 
                 </nav>
