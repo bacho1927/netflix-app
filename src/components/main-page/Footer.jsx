@@ -6,7 +6,7 @@ function Footer() {
 
         <footer className="min-w-[500px]   bg-black py-14 border-t-8 border-[#2D2D2D] ">
             <div className="flex flex-col w-[90%] xl:w-[60%] mx-auto ">
-                <a href="/" className="text-[#BEBEBE] text-lg underline ">Questions? Contact us.</a>
+                <Link to="/Contact" className="text-[#BEBEBE] text-lg underline ">Questions? Contact us.</Link>
                 <div className="text-white ">
                     <ul className="grid  grid-cols-3 py-12 gap-2 underline  text-[#BEBEBE]">
                         <li><Link to="FAQ">FAQ</Link></li>

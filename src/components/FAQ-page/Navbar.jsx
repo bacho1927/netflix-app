@@ -1,6 +1,8 @@
 import React from "react"
 import logo from "../../img/netflix-logo.png"
 import { Link } from "react-router-dom"
+
+
 function Navbar() {
     return (
         <div className="bg-black">
@@ -11,7 +13,7 @@ function Navbar() {
 
                     </a>
                     <div className="bg-gray-300 absolute h-6 w-[1px] left-[122px] top-5 "></div>
-                    <Link to="/" className="text-white  font-semibold mx-8 text-sm">Help Center</Link>
+                    <Link to="/" className="text-white  font-semibold mx-8 text-sm lg:text-lg">Help Center</Link>
                 </div>
                 <div className="text-white flex relative px-4 text-[12px] md:text-[15px]">
                     <button className="border border-[#696969] font-semibold p-1 px-4 mx-4 rounded-md" >Join Netflix</button>
