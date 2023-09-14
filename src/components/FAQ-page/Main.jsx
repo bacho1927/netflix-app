@@ -9,14 +9,14 @@ function Main() {
 
     return (
         <div className=" min-w-[500px]" >
-            <div className="py-12 max-w-[70%]  mx-auto min-w-[500px] px-4  ">
+            <div className="py-8 max-w-[70%]  mx-auto min-w-[500px] px-4  ">
                 < div  >
                     <Link to='/' className="flex items-center text-[#e50914] font-semibold">
                         <AiOutlineArrowLeft />
                         Back to Help Home
                     </Link>
                 </div >
-                <h1 className="text-md md:text-2xl lg:text-4xl font-bold py-4">What is Netflix?</h1>
+                <h1 className="text-md md:text-2xl lg:text-4xl font-bold pt-8">What is Netflix?</h1>
                 <div className="flex flex-col xl:flex-row ">
                     <div className="max-w-[100%] xl:max-w-[70%]">
                         {FaqData.map((item, index) => (
