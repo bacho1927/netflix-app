@@ -36,32 +36,7 @@ function Contact() {
                             </li>
                         ))}
                     </ul>
-                    {/* <ul className='p-6 flex flex-col gap-4 font-semibold text-[#323232]'>
-                        <li className='border-b'>
-                            <a href="/" className='flex items-center hover:underline hover:cursor-pointer pb-4 '>
-                                <AiOutlineLock /> Reset password
-                            </a>
-                        </li>
-                        <li className='border-b'>
-                            <a href="/" className='flex items-center hover:underline hover:cursor-pointer border-b pb-4 '>
-                                < AiOutlineMail /> Update email
-                            </a>
-                        </li>
-                        <li className='border-b'>
-                            <a href="/" className='flex items-center hover:underline hover:cursor-pointer border-b pb-4 '>
-                                <AiOutlineQuestionCircle />Get help signing in
-                            </a>
-                        </li>
-                        <li className='border-b'>
-                            <a href="/" className='flex items-center hover:underline hover:cursor-pointer border-b pb-4 '>
-                                <AiOutlineCreditCard /> update payment method
-                            </a>
-                        </li>
-                        <li className='border-b'>
-                            <a href="/" className='flex items-center hover:underline hover:cursor-pointer border-b pb-4 '> <LuMegaphone />Request TV shows or movies
-                            </a>
-                        </li>
-                    </ul> */}
+
                 </div>
             </div>
             <Footer />

@@ -8,21 +8,21 @@ function Footer() {
             <div className="flex flex-col w-[90%] xl:w-[60%] mx-auto ">
                 <Link to="/Contact" className="text-[#BEBEBE] text-lg underline ">Questions? Contact us.</Link>
                 <div className="text-white ">
-                    <ul className="grid  grid-cols-3 py-12 gap-2 underline  text-[#BEBEBE]">
-                        <li><Link to="FAQ">FAQ</Link></li>
-                        <li><a href='/'>Media Center</a></li>
-                        <li><a href='/'>Ways to Watch</a></li>
-                        <li><a href='/'>Cookie Preferences</a></li>
-                        <li><a href='https://fast.com/'>Speed Test</a></li>
-                        <li><a href='/'>Help Center</a></li>
-                        <li><a href='/'>Investor Relations</a></li>
-                        <li><a href='/'>Terms of Use</a></li>
-                        <li><a href='/'>Corporate Information</a></li>
-                        <li><a href='/'>Legal Notices</a></li>
+                    <ul className="grid  grid-cols-4 py-12 gap-2 underline  text-[#BEBEBE]">
+                        <li><Link to="/FAQ">FAQ</Link></li>
+                        <li><a href='/Help'>Help Center</a></li>
                         <li><a href='/'>Account</a></li>
+                        <li><a href='/'>Media Center</a></li>
+                        <li><a href='/'>Investor Relations</a></li>
                         <li><a href='/'>Jobs</a></li>
+                        <li><a href='/'>Ways to Watch</a></li>
+                        <li><a href='/'>Terms of Use</a></li>
                         <li><a href='/'>Privacy</a></li>
-                        <li><a href='/'>Contact Us</a></li>
+                        <li><a href='/'>Cookie Preferences</a></li>
+                        <li><a href='/'>Corporate Information</a></li>
+                        <li><Link to="/Contact">Contact Us</Link></li>
+                        <li><a href='https://fast.com/'>Speed Test</a></li>
+                        <li><a href='/'>Legal Notices</a></li>
                         <li><a href='/'>Only on Netflix</a></li>
                     </ul>
                 </div>

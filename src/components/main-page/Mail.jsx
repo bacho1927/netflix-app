@@ -1,5 +1,5 @@
-import React from "react"
-import { useState } from "react";
+import React, { useRef, useState } from "react"
+
 
 function Mail({ inputId, labelFor }) {
 
@@ -20,7 +20,11 @@ function Mail({ inputId, labelFor }) {
         setInputValue(e.target.value);
     };
 
+    const inputRef = useRef(null)
 
+    const buttonFocusesInput = () => {
+        inputRef.current.focus()
+    }
 
     return (
         <form className="flex flex-col items-center  justify-center">
@@ -34,6 +38,7 @@ function Mail({ inputId, labelFor }) {
                 </label>
                 <div className={`w-80 text-white bg-[#1E1E1E] bg-opacity-60 rounded-md border flex items-end border-gray-600 px-2 sm:w-96 ${placeholderFocused ? 'border-white' : ''}`}>
                     <input
+                        ref={inputRef}
                         id={inputId}
                         type="text"
                         className={`w-full bg-transparent   outline-none  p-1 text-md  `}
@@ -43,7 +48,7 @@ function Mail({ inputId, labelFor }) {
 
                     />
                 </div>
-                <button className="bg-[#E50914] hover:bg-[#a7131a] transition duration-500  text-white font-semibold text-md sm:text-xl p-3 px-6 rounded-md">Get started {'>'}</button>
+                <button className="bg-[#E50914] hover:bg-[#a7131a] transition duration-500  text-white font-semibold text-md sm:text-xl p-3 px-6 rounded-md" onClick={buttonFocusesInput} type='button'>Get started {'>'}</button>
             </div>
         </form>
     )
