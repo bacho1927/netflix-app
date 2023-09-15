@@ -3,10 +3,10 @@ import logo from "../../img/netflix-logo.png"
 import { Link } from "react-router-dom"
 
 
-function Navbar({ children }) {
+function Navbar({ children, width }) {
     return (
         <div className="bg-black">
-            <nav className="bg-black flex justify-between mx-auto items-center p-2 max-w-[70%]  min-w-[500px]">
+            <nav className={`bg-black flex justify-between mx-auto items-center p-2 ${width ? width : 'max-w-[1200px]'}  min-w-[500px]`}>
                 <div className="flex items-center relative ">
                     <a href="/" className="">
                         <img src={logo} alt="netflix-logo" className='w-28 ' />

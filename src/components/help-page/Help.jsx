@@ -17,7 +17,7 @@ function Help() {
                 </div>
 
             </div>
-            <div className="mx-auto max-w-[70%] min-w-[500px] px-4 font-semibold">
+            <div className="mx-auto max-w-[1200px] min-w-[500px] px-4 font-semibold">
                 <h1 className=" text-xl md:text-2xl pt-4">Sign in for personalized help</h1>
                 <div className="flex py-6">
                     <Link className="bg-red-600 text-white p-3 px-6 rounded  hover:bg-red-700">SIGN IN</Link>

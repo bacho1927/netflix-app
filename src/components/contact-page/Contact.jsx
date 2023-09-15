@@ -15,9 +15,9 @@ function Contact() {
 
 
     return (
-        <div >
-            <Nav />
-            <div className='max-w-[70%]  min-w-[500px] mx-auto p-4'>
+        <div className='min-w-[720px]'>
+            <Nav width="max-w-[720px]" />
+            <div className='max-w-[720px]   mx-auto p-4'>
                 <h1 className='text-4xl font-bold'>Contact Us</h1>
                 <div>
                     <h2 className='pt-6 pb-2 font-semibold md:text-lg'>Tell us more and we'll find the best solution for you</h2>
@@ -39,7 +39,7 @@ function Contact() {
 
                 </div>
             </div>
-            <Footer />
+            <Footer width='max-w-[720px] ' />
         </div>
     )
 }

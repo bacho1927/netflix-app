@@ -9,7 +9,7 @@ function Main() {
 
     return (
         <div className=" min-w-[500px]" >
-            <div className="py-8 max-w-[70%]  mx-auto min-w-[500px] px-4  ">
+            <div className="py-8 max-w-[1200px]  mx-auto min-w-[500px] px-4  ">
                 < div  >
                     <Link to='/' className="flex items-center text-[#e50914] font-semibold">
                         <AiOutlineArrowLeft />
@@ -17,8 +17,8 @@ function Main() {
                     </Link>
                 </div >
                 <h1 className="text-md md:text-2xl lg:text-4xl font-bold pt-8">What is Netflix?</h1>
-                <div className="flex flex-col xl:flex-row ">
-                    <div className="max-w-[100%] xl:max-w-[70%]">
+                <div className="flex flex-col lg:flex-row ">
+                    <div className="max-w-[100%] lg:max-w-[70%]">
                         {FaqData.map((item, index) => (
 
                             <FaqContent data={item} key={index} />
@@ -31,7 +31,7 @@ function Main() {
                         </div>
                     </div>
 
-                    <aside className="border-t-8 border-red-600 rounded mt-6 xl:ml-14" >
+                    <aside className="border-t-8 border-red-600 rounded mt-6 lg:ml-14" >
 
                         <div className="border border-[#B2B2B2] p-2 rounded ">
                             <h1 className="text-xl font-semibold">Related Articles</h1>
