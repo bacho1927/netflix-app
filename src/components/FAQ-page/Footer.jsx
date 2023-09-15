@@ -1,6 +1,6 @@
 
 import { AiFillCaretDown } from 'react-icons/ai'
-
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -8,8 +8,8 @@ function Footer() {
 
             <div className="max-w-[70%] min-w-[500px] mx-auto px-4    border-gray-500">
                 <div className="flex flex-col sm:flex-row items-center border-b py-6">
-                    <h1 className="text-white font-semibold xl:text-2xl pb-4">Need more help? </h1>
-                    <button className="text-black mx-8 p-2 px-10 bg-white rounded font-bold">Contuct Us</button>
+                    <h1 className="text-white font-semibold text-lg xl:text-2xl pb-4">Need more help? </h1>
+                    <button className="text-black mx-8 p-2 px-10 bg-white rounded font-bold"><Link to="/Contact">Contuct Us </Link></button>
                 </div>
                 <div className="py-12 ">
 
