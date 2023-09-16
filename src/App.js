@@ -3,6 +3,7 @@ import Home from "./components/main-page/Home";
 import FaqHome from "./components/FAQ-page/FaqHome";
 import Contact from "./components/contact-page/ContactHome";
 import Help from './components/help-page/HelpHome'
+
 function App() {
   return (
     <div className="App">

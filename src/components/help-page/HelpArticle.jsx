@@ -1,6 +1,7 @@
 import QuickLinks from "./ArticleLinks";
 import { quickLinksData } from "./ArticleLinksData";
 import { FaAngleRight } from "react-icons/fa";
+
 function HelpArticle() {
 
     return (
