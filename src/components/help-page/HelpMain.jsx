@@ -3,7 +3,7 @@ import { MdOutlineArticle } from 'react-icons/md'
 
 function HelpMain() {
     return (
-        <div className="mx-auto max-w-[1200px] min-w-[500px]  font-semibold px-4">
+        <div className="mx-auto max-w-[1300px] min-w-[500px]  font-semibold ">
             <h1 className=" text-xl md:text-2xl pt-4">Sign in for personalized help</h1>
             <div className="flex py-6">
                 <Link className="bg-red-600 text-white p-3 px-6 rounded  hover:bg-red-700">SIGN IN</Link>
