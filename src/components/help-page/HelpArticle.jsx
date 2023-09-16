@@ -5,7 +5,7 @@ import { FaAngleRight } from "react-icons/fa";
 function HelpArticle() {
 
     return (
-        <div className="border-t border-gray-200 min-w-[500px] flex flex-col lg:flex-row max-w-[1300px] mx-auto px-4">
+        <div className="border-t border-gray-200 min-w-[500px] flex flex-col lg:flex-row max-w-[1300px] mx-auto px-4 pt-4 pb-24">
             <div className="bg-red     flex flex-col md:grid md:grid-cols-3 lg:flex lg:flex-row">
 
                 {quickLinksData.map((data, index) => (
