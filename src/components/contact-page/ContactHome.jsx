@@ -1,9 +1,8 @@
-
 import Nav from '../FAQ-page/Navbar'
 import Footer from '../FAQ-page/Footer'
 import { AiOutlineLock, AiOutlineMail, AiOutlineQuestionCircle, AiOutlineCreditCard } from 'react-icons/ai'
 import { LuMegaphone } from 'react-icons/lu'
-import { Link } from 'react-router-dom'
+
 function Contact() {
 
     const links = [
