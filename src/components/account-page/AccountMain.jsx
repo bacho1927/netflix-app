@@ -25,7 +25,7 @@ function AccountMain() {
                         <img src={logo} alt='netflix-logo' className='w-36 sm:w-56' />
                     </a>
                 </nav>
-                <div className='bg-black md:bg-opacity-70   md:max-w-[450px] mx-auto'>
+                <div className='bg-black md:bg-opacity-70   md:max-w-[500px] mx-auto'>
                     <div className='p-16  '>
                         <h1 className='text-white text-3xl pb-6 font-bold '>Sign In</h1>
                         <Mail inputId='headerInput' labelFor='headerInput' labelText='Email or phone number' duration='duration-100' background='bg-[#333] ' width='w-80' >

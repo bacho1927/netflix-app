@@ -28,7 +28,7 @@ function Mail({ inputId, labelFor, labelText, children, duration, background, in
         <form className="flex flex-col items-center   justify-center">
             <div className={`gap-2 my-2 relative flex  ${background}`}>
                 <label
-                    for={labelFor}
+                    htmlFor={labelFor}
                     className={`absolute overflow-hidden mx-3  transition-all cursor-text  ${duration} ${placeholderFocused ? 'text-sm top-1 text-gray-300' : 'top-5 text-base text-[#969696] font-semibold'
                         }`}
                 >
