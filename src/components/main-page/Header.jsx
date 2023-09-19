@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import React from "react";
 import mainImg from '../../img/main-img.jpg'
 import logo from '../../img/netflix-logo.png'
@@ -36,7 +37,7 @@ function Header() {
                     </a>
                     <span className="flex  gap-6">
                         <SelectLanguage />
-                        <button className='bg-[#E50914] hover:bg-[#a7131a] transition duration-500 text-white font-semibold p-2 px-4 rounded-md  md:text-md '>Sign In</button>
+                        <Link to="/Account" className='bg-[#E50914] hover:bg-[#a7131a] transition duration-500 text-white font-semibold p-2 px-4 rounded-md  md:text-md '>Sign In</Link>
                     </span>
 
                 </nav>

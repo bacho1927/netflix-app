@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 
 
+//This is input component (including animation) , which has been used on several pages
+
 function Mail({ inputId, labelFor, labelText, children, duration, background, inputRef, width }) {
 
     const [placeholderFocused, setPlaceholderFocused] = useState(false);

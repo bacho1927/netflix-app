@@ -1,5 +1,8 @@
 import { BsGlobe2 } from 'react-icons/bs'
 import { AiFillCaretDown } from 'react-icons/ai'
+
+//This is select component
+
 function SelectLanguage() {
     return (
         <div>

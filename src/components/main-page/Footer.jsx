@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import SelectLanguage from "./SelectLanguage";
 
 function Footer() {
+
+
+
+
     return (
 
         <footer className="min-w-[500px]   bg-black py-14 border-t-8 border-[#2D2D2D] ">

@@ -17,7 +17,7 @@ function Navbar({ children, width }) {
                 </div>
                 <div className="text-white flex relative px-4 text-[12px] md:text-[15px]">
                     <button className="border border-[#696969] font-semibold p-1 px-4 mx-4 rounded-md" >Join Netflix</button>
-                    <button className='bg-[#E50914] hover:bg-[#a7131a] transition duration-500 text-white font-semibold p-1 px-4 rounded-md '>Sign In</button>
+                    <Link to="/Account" className='bg-[#E50914] hover:bg-[#a7131a] transition duration-500 text-white font-semibold p-2 px-4 rounded-md  md:text-md '>Sign In</Link>
                 </div>
 
             </nav>

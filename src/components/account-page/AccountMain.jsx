@@ -19,7 +19,7 @@ function AccountMain() {
     return (
 
         <div style={mainImgStyle} >
-            <div className='bg-black md:bg-opacity-60 h-[100vh]' >
+            <div className='bg-black md:bg-opacity-60 h-[100vh] min-w-[450px]' >
                 <nav className='px-4 md:px-14 '>
                     <a href='/'>
                         <img src={logo} alt='netflix-logo' className='w-36 sm:w-56' />
