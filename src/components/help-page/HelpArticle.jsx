@@ -1,4 +1,4 @@
-import QuickLinks from "./ArticleLinks";
+import QuickLinks from "./QuickLinks";
 import { quickLinksData } from "./ArticleLinksData";
 import { FaAngleRight } from "react-icons/fa";
 

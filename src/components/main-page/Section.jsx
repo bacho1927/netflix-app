@@ -25,15 +25,16 @@ function Section() {
 
                             </div>
                         </div> : ''}
-                        {section.sectionVideo ?
-                            <div className={` absolute top-0 left-0  z-[-1] ${section.id === 3 ? 'top-[10%] left-[20%] w-[60%] ' : 'top-[20%] left-[13%] w-[73%] '
-                                } `}>
-                                <video autoPlay muted loop >
-                                    <source src={section.sectionVideo} type='video/mp4' />
+                        {section.sectionVideo && (
+                            <div
+                                className={`absolute top-0 left-0 z-[-1] ${section.id === 3 ? "top-[10%] left-[20%] w-[60%]" : "top-[20%] left-[13%] w-[73%]"
+                                    }`}
+                            >
+                                <video autoPlay muted loop>
+                                    <source src={section.sectionVideo} type="video/mp4" />
                                 </video>
-
                             </div>
-                            : ''}
+                        )}
                     </div>
                 </div>
 

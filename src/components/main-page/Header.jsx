@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 import mainImg from '../../img/main-img.jpg'
 import logo from '../../img/netflix-logo.png'
-import Mail from "./Mail";
+import InputAnimated from "./InputAnimated";
 import SelectLanguage from "./SelectLanguage";
 
 function Header() {
@@ -37,7 +37,7 @@ function Header() {
                     </a>
                     <span className="flex  gap-6">
                         <SelectLanguage />
-                        <Link to="/Account" className='bg-[#E50914] hover:bg-[#a7131a] transition duration-500 text-white font-semibold p-2 px-4 rounded-md  md:text-md '>Sign In</Link>
+                        <Link to="/Signin" className='bg-[#E50914] hover:bg-[#a7131a] transition duration-500 text-white font-semibold p-2 px-4 rounded-md  md:text-md '>Sign In</Link>
                     </span>
 
                 </nav>
@@ -46,10 +46,10 @@ function Header() {
                         <h1 className="text-3xl md:text-4xl  lg:text-5xl font-bold">Unlimited movies, TV shows, and more</h1>
                         <p className="text-2xl md:text-3xl sm:text-2xl my-10 ">Watch anywhere. Cancel anytime.</p>
                         <h3 className="text-2 md:text-xl sm:text-lg ">Ready to watch? Enter your email to create or restart your membership.</h3>
-                        <Mail inputId='headerInput' labelFor='headerInput' labelText='Email address' duration='duration-300' width='sm:w-96' inputRef={inputRef}>
+                        <InputAnimated inputId='headerInput' labelFor='headerInput' labelText='Email address' duration='duration-300' width='sm:w-96' inputRef={inputRef} focusedStyles='text-sm top-1 text-gray-300' normalStyles='top-5 text-base text-[#969696] font-semibold ' borderColor='border-white'>
                             <button onClick={focusInput} className="bg-[#E50914] hover:bg-[#a7131a] transition duration-500  text-white font-semibold text-md sm:text-xl p-3 px-6 rounded-md" type='button'>Get started {'>'}
                             </button>
-                        </Mail>
+                        </InputAnimated>
                     </main>
                 </section>
             </div>

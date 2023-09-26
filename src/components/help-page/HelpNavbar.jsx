@@ -3,7 +3,7 @@ import { RxMagnifyingGlass } from "react-icons/rx"
 function HelpNavbar() {
     return (
         <div className="bg-black pb-6 min-w-[500px]">
-            <Nav >
+            <Nav width='max-w-[1300px]'>
                 <h1 className="text-white text-xl md:text-3xl font-bold text-center pb-6">Help Center</h1>
 
             </Nav>

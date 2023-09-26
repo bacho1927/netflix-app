@@ -1,12 +1,13 @@
 
 import { AiFillCaretDown } from 'react-icons/ai'
 
+//this is Footer component used for several pages
 
 function Footer({ children, width }) {
     return (
         <div className=" bg-black min-w-[500px] bg-gradient-to-24 from-transparent  via-red-600 to-black">
 
-            <div className={`${width ? width : 'max-w-[1300px]'} min-w-[500px] mx-auto px-4    border-gray-500`}>
+            <div className={`${width ? width : 'max-w-[1200px]'} min-w-[500px] mx-auto px-4    border-gray-500`}>
                 {children}
                 <div className="py-12 ">
 

@@ -15,7 +15,7 @@ function Footer() {
                     <ul className="grid  grid-cols-4 py-12 gap-2 underline  text-[#BEBEBE]">
                         <li><Link to="/FAQ">FAQ</Link></li>
                         <li><Link to='/Help'>Help Center</Link></li>
-                        <li><Link to="/Account">Account</Link></li>
+                        <li><Link to="/Signin">Account</Link></li>
                         <li><a href='/'>Media Center</a></li>
                         <li><a href='/'>Investor Relations</a></li>
                         <li><a href='/'>Jobs</a></li>

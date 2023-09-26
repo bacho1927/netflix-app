@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 
 
-//This is input component (including animation) , which has been used on several pages
+//This is input component (including animation) , which has been used for several pages
 
-function Mail({ inputId, labelFor, labelText, children, duration, background, inputRef, width }) {
+function InputAnimated({ children, inputId, labelFor, labelText, duration, background, inputRef, width, focusedStyles, normalStyles, borderColor, textColor }) {
 
     const [placeholderFocused, setPlaceholderFocused] = useState(false);
     const [inputValue, setInputValue] = useState('');
@@ -26,15 +26,15 @@ function Mail({ inputId, labelFor, labelText, children, duration, background, in
 
     return (
         <form className="flex flex-col items-center   justify-center">
-            <div className={`gap-2 my-2 relative flex  ${background}`}>
+            <div className={`gap-2 my-2 relative flex   ${background}`}>
                 <label
                     htmlFor={labelFor}
-                    className={`absolute overflow-hidden mx-3  transition-all cursor-text  ${duration} ${placeholderFocused ? 'text-sm top-1 text-gray-300' : 'top-5 text-base text-[#969696] font-semibold'
+                    className={`absolute overflow-hidden mx-3  transition-all cursor-text    ${duration} ${placeholderFocused ? focusedStyles : normalStyles
                         }`}
                 >
                     {labelText}
                 </label>
-                <div className={` text-white bg-[#1E1E1E] bg-opacity-60 rounded-md border flex items-end border-gray-600 px-3  ${width} ${placeholderFocused ? 'border-white' : ''}`}>
+                <div className={` ${textColor}  ${background ? background : 'bg-[#1E1E1E]'} bg-opacity-60 rounded-md border flex items-end border-gray-600 px-3  ${width} ${placeholderFocused ? borderColor : ''}`}>
                     <input
                         ref={inputRef}
                         id={inputId}
@@ -53,4 +53,4 @@ function Mail({ inputId, labelFor, labelText, children, duration, background, in
     )
 }
 
-export default Mail
+export default InputAnimated

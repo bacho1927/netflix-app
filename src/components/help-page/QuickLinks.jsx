@@ -7,8 +7,8 @@ function QuickLinks({ links, title }) {
             <h1 className="text-2xl py-6 font-semibold">{title}</h1>
 
             {links.map((link, index) => (
-                <ul className=" text-[#4c4948]">
-                    <li key={index} className="py-2 hover:underline"><a href='/' className='flex justify-between items-center'>{link} <FaAngleRight className="text-red-600 lg:hidden" /></a></li>
+                <ul key={index} className=" text-[#4c4948]">
+                    <li className="py-2 hover:underline"><a href='/' className='flex justify-between items-center'>{link} <FaAngleRight className="text-red-600 lg:hidden" /></a></li>
                 </ul>
             ))}
 
