@@ -1,4 +1,4 @@
-import AccountFooter from "../../account-page/AccountFooter"
+import AccountFooter from "../../sign-in-page/AccountFooter"
 function SignupFooter() {
     return (
         <footer >

@@ -1,31 +1,29 @@
 import React, { useState } from "react"
-
+import { useRef } from "react";
 
 //This is input component (including animation) , which has been used for several pages
 
-function InputAnimated({ children, inputId, labelFor, labelText, duration, background, inputRef, width, focusedStyles, normalStyles, borderColor, textColor }) {
+function InputAnimated({ children, inputId, labelFor, labelText, duration, background, width, focusedStyles, normalStyles, borderColor, textColor, onChange, onSubmit, type }) {
+
+
+    const inputRef = useRef(null);
 
     const [placeholderFocused, setPlaceholderFocused] = useState(false);
-    const [inputValue, setInputValue] = useState('');
+
 
     const handleInputFocus = () => {
         setPlaceholderFocused(true);
+
     };
 
     const handleInputBlur = () => {
-        if (inputValue === '') {
+        if (inputRef.current.value === '') {
             setPlaceholderFocused(false);
         }
     };
 
-    const handleInputChange = (e) => {
-        setInputValue(e.target.value);
-    };
-
-
-
     return (
-        <form className="flex flex-col items-center   justify-center">
+        <form className="flex flex-col items-center   justify-center" onSubmit={onSubmit}>
             <div className={`gap-2 my-2 relative flex   ${background}`}>
                 <label
                     htmlFor={labelFor}
@@ -38,11 +36,11 @@ function InputAnimated({ children, inputId, labelFor, labelText, duration, backg
                     <input
                         ref={inputRef}
                         id={inputId}
-                        type="text"
+                        type={type}
                         className={`w-full bg-transparent   outline-none  py-4 mt-1  `}
                         onFocus={handleInputFocus}
                         onBlur={handleInputBlur}
-                        onChange={handleInputChange}
+                        onChange={onChange}
                     />
                 </div>
 

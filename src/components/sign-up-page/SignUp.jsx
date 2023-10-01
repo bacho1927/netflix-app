@@ -1,6 +1,5 @@
 import SignupNavbar from "./Sign-up-components/SignupNavbar"
 import SignupFooter from "./Sign-up-components/SignupFooter"
-
 import { Outlet } from "react-router-dom"
 
 function SignUp() {

@@ -1,10 +1,11 @@
 import { useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import React from "react";
 import mainImg from '../../img/main-img.jpg'
 import logo from '../../img/netflix-logo.png'
 import InputAnimated from "./InputAnimated";
 import SelectLanguage from "./SelectLanguage";
+import { UserAuth } from "../../context/AuthContext";
 
 function Header() {
 
@@ -16,7 +17,8 @@ function Header() {
         minWidth: '500px',
 
     }
-
+    const { user, logOut } = UserAuth()
+    const navigate = useNavigate()
     const inputRef = useRef(null)
 
     const focusInput = () => {
@@ -24,6 +26,17 @@ function Header() {
             inputRef.current.focus();
         }
     };
+
+    const handleLogOut = async () => {
+        try {
+            await logOut();
+            navigate('/')
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+
 
 
     return (
@@ -37,7 +50,8 @@ function Header() {
                     </a>
                     <span className="flex  gap-6">
                         <SelectLanguage />
-                        <Link to="/Signin" className='bg-[#E50914] hover:bg-[#a7131a] transition duration-500 text-white font-semibold p-2 px-4 rounded-md  md:text-md '>Sign In</Link>
+                        <Link to="/Signin" onClick={user?.email ? handleLogOut : null} className='bg-[#E50914] hover:bg-[#a7131a] transition duration-500 text-white font-semibold p-2 px-4 rounded-md  md:text-md '>{user?.email ? 'Sign Out' : 'Sign In'}
+                        </Link>
                     </span>
 
                 </nav>
