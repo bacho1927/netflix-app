@@ -49,7 +49,7 @@ function AccountMain() {
 
                             <h1 className='text-white text-3xl pb-6 font-bold '>Sign In</h1>
                             {error ? <p className='text-red-700'>{error}</p> : null}
-                            <InputAnimated type='text' inputId='headerInput' labelFor='headerInput' labelText='Email or phone number' duration='duration-100' background='bg-[#333] ' width='w-80' focusedStyles='text-sm top-1 text-gray-300' normalStyles='top-5 text-base text-[#969696] font-semibold  ' textColor='text-white' onChange={(e) => setEmail(e.target.value)} onSubmit={handleSubmit}>
+                            <InputAnimated type="email" inputId='headerInput' labelFor='headerInput' labelText='Email or phone number' duration='duration-100' background='bg-[#333] ' width='w-80' focusedStyles='text-sm top-1 text-gray-300' normalStyles='top-5 text-base text-[#969696] font-semibold  ' textColor='text-white' onChange={(e) => setEmail(e.target.value)} onSubmit={handleSubmit}>
 
                             </InputAnimated>
                             <InputAnimated type="password" inputId='headerInput2' labelFor='headerInput2' labelText='Password' duration='duration-100' background='bg-[#333] ' width='w-80' focusedStyles='text-sm top-1 text-gray-300' normalStyles='top-5 text-base text-[#969696] font-semibold  ' textColor='text-white' onChange={(e) => setPassword(e.target.value)} onSubmit={handleSubmit}>

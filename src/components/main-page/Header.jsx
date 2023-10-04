@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import React from "react";
 import mainImg from '../../img/main-img.jpg'
@@ -9,23 +9,13 @@ import { UserAuth } from "../../context/AuthContext";
 
 function Header() {
 
-    const mainImgStyle = {
-        backgroundImage: `url(${mainImg})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-        minWidth: '500px',
 
-    }
     const { user, logOut } = UserAuth()
     const navigate = useNavigate()
     const inputRef = useRef(null)
+    const { inputValue, setInputValue } = UserAuth();
 
-    const focusInput = () => {
-        if (inputRef.current) {
-            inputRef.current.focus();
-        }
-    };
+
 
     const handleLogOut = async () => {
         try {
@@ -37,6 +27,14 @@ function Header() {
     }
 
 
+    const mainImgStyle = {
+        backgroundImage: `url(${mainImg})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+        minWidth: '500px',
+
+    }
 
 
     return (
@@ -60,9 +58,10 @@ function Header() {
                         <h1 className="text-3xl md:text-4xl  lg:text-5xl font-bold">Unlimited movies, TV shows, and more</h1>
                         <p className="text-2xl md:text-3xl sm:text-2xl my-10 ">Watch anywhere. Cancel anytime.</p>
                         <h3 className="text-2 md:text-xl sm:text-lg ">Ready to watch? Enter your email to create or restart your membership.</h3>
-                        <InputAnimated inputId='headerInput' labelFor='headerInput' labelText='Email address' duration='duration-300' width='sm:w-96' inputRef={inputRef} focusedStyles='text-sm top-1 text-gray-300' normalStyles='top-5 text-base text-[#969696] font-semibold ' borderColor='border-white'>
-                            <button onClick={focusInput} className="bg-[#E50914] hover:bg-[#a7131a] transition duration-500  text-white font-semibold text-md sm:text-xl p-3 px-6 rounded-md" type='button'>Get started {'>'}
-                            </button>
+
+                        <InputAnimated type="email" inputId='headerInput' labelFor='headerInput' labelText='Email address' duration='duration-300' width='sm:w-96' inputRef={inputRef} focusedStyles='text-sm top-1 text-gray-300' normalStyles='top-5 text-base text-[#969696] font-semibold ' borderColor='border-white' onChange={(e) => setInputValue(e.target.value)} value={inputValue}>
+                            <Link to="/Signup" className="bg-[#E50914] hover:bg-[#a7131a] transition duration-500  text-white font-semibold text-md sm:text-xl p-4 px-6 rounded-md" type='button'>Get started {'>'}
+                            </Link>
                         </InputAnimated>
                     </main>
                 </section>
