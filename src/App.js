@@ -5,9 +5,10 @@ import Contact from "./components/contact-page/ContactHome";
 import Help from './components/help-page/HelpHome'
 import SignIn from './components/sign-in-page/AccountMain'
 import SignUp from "./components/sign-up-page/SignUp";
-import SignupMain1 from "./components/sign-up-page/Sign-up-components/SignupMain1";
-import SignupMain2 from "./components/sign-up-page/Sign-up-components/SignupMain2";
+import SignupMain from "./components/sign-up-page/Sign-up-components/SignupMain";
+import SignupReg from "./components/sign-up-page/Sign-up-components/SignupReg";
 import { AuthContextProvider } from "./context/AuthContext";
+import SignupPlan from "./components/sign-up-page/Sign-up-components/sign-up-plan/SignupPlan";
 
 function App() {
 
@@ -23,8 +24,9 @@ function App() {
             <Route path="Help" element={<Help />} />
             <Route path="Signin" element={<SignIn />} />
             <Route path="Signup" element={<SignUp />}>
-              <Route index element={<SignupMain1 />} />
-              <Route path="form" element={<SignupMain2 />} />
+              <Route index element={<SignupMain />} />
+              <Route path="Form" element={<SignupReg />} />
+              <Route path="Plan" element={<SignupPlan />} />
             </Route >
           </Routes>
         </BrowserRouter>

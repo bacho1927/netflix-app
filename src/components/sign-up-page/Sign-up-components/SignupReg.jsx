@@ -1,27 +1,31 @@
 import InputAnimated from "../../main-page/InputAnimated"
 import { UserAuth } from "../../../context/AuthContext"
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignupMain2() {
 
     const [password, setPassword] = useState('')
+
     const { signUp } = UserAuth();
+
     const [error, setError] = useState('')
+
     const { inputValue, setInputValue } = UserAuth();
+
+    const navigate = useNavigate()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         setError('')
         try {
             await signUp(inputValue, password)
+            navigate('/Signup/Plan')
         } catch (error) {
             setError(error.message)
 
         }
     }
-
-
-
 
 
     return (
@@ -39,8 +43,8 @@ function SignupMain2() {
                 <InputAnimated type="password" inputId='passwordInput' labelFor='passwordInput' labelText='Add a Password' duration='duration-100' background='bg-white' width='w-[440px]' normalStyles='top-5 text-base text-[#000000B3] font-semibold' focusedStyles='text-sm top-1 text-[#000000B3]' onChange={(e) => setPassword(e.target.value)} onSubmit={handleSubmit} value={password}>
 
                 </InputAnimated>
-                <button className="bg-[#E50914] hover:bg-[#a7131a] w-full p-4 mt-4 transition duration-500  text-white font-semibold text-md sm:text-2xl rounded-md" type='button' onClick={handleSubmit}>Next
-                </button>
+                <Link className="text-center bg-[#E50914] hover:bg-[#a7131a] w-full p-4 mt-4 transition duration-500  text-white font-semibold text-md sm:text-2xl rounded-md" type='button' onClick={handleSubmit} >Next
+                </Link>
             </div>
         </div >
     )
